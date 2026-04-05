@@ -4,6 +4,12 @@ A clean and interactive personal finance dashboard built using React and Vite. T
 
 ---
 
+## 🔗 Live Demo
+
+👉 https://financestruc.netlify.app/
+
+---
+
 ## 📁 Project Structure
 
 ```
