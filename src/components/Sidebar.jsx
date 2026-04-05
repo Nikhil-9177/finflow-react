@@ -16,6 +16,12 @@ export default function Sidebar({ open, onClose }) {
         <div className="sidebar-logo">
           <div className="logo-mark">F</div>
           <span className="logo-name">FinFlow</span>
+          <button className="icon-btn close-btn" onClick={onClose} title="Close">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <line x1="4" y1="4" x2="16" y2="16"/>
+              <line x1="4" y1="16" x2="16" y2="4"/>
+            </svg>
+          </button>
         </div>
 
         <nav className="sidebar-nav">
