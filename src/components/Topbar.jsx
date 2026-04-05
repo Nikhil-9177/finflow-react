@@ -21,6 +21,13 @@ export default function Topbar({ onMenuClick, onAddClick }) {
   return (
     <header className="topbar">
       <div className="topbar-left">
+        <button className="icon-btn" onClick={onMenuClick} title="Menu">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <line x1="3" y1="6" x2="17" y2="6"/>
+            <line x1="3" y1="10" x2="17" y2="10"/>
+            <line x1="3" y1="14" x2="17" y2="14"/>
+          </svg>
+        </button>
         <span className="topbar-title">{PAGE_TITLES[state.page]}</span>
       </div>
       <div className="topbar-right">
