@@ -1,23 +1,21 @@
 # FinFlow — Finance Dashboard (React + Vite)
 
-A clean, interactive personal finance dashboard built with React, Vite, and Chart.js.
-
-Live Demo: *(add your Vercel link here after deployment)*
+A clean and interactive personal finance dashboard built using React and Vite. This application helps users manage their financial data with powerful visualization, filtering, and tracking features.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 finflow/
 ├── src/
 │   ├── context/
-│   │   └── AppContext.jsx       <- global state (useReducer + localStorage)
+│   │   └── AppContext.jsx       # Global state (useReducer + localStorage)
 │   ├── data/
-│   │   └── transactions.js      <- mock data + category constants
+│   │   └── transactions.js      # Mock data + category constants
 │   ├── utils/
-│   │   ├── finance.js           <- calcSummary, fmt, getMonthlyData
-│   │   └── tableUtils.js        <- filter + sort logic
+│   │   ├── finance.js           # Financial calculations (summary, monthly data)
+│   │   └── tableUtils.js        # Filtering and sorting logic
 │   ├── components/
 │   │   ├── Sidebar.jsx
 │   │   ├── Topbar.jsx
@@ -31,20 +29,27 @@ finflow/
 │   └── index.css
 ├── index.html
 ├── vite.config.js
-├── vercel.json
 └── README.md
 ```
 
 ---
 
-## Getting Started
+## ⚙️ Getting Started
+
+### Install dependencies
 
 ```bash
 npm install
+```
+
+### Run the development server
+
+```bash
 npm run dev
 ```
 
-Build for production:
+### Build for production
+
 ```bash
 npm run build
 npm run preview
@@ -52,38 +57,46 @@ npm run preview
 
 ---
 
-## Deploy to Vercel
+## ✨ Features
 
-Option 1 - Vercel dashboard:
-1. Push repo to GitHub
-2. vercel.com -> New Project -> Import repo
-3. Framework auto-detects as Vite
-4. Click Deploy
+* 📊 Summary cards with financial insights and trends
+* 📈 Balance trend line chart
+* 🍩 Spending distribution (donut chart)
+* 📋 Transactions table with:
 
-Option 2 - CLI:
-```bash
-npm i -g vercel
-vercel
-```
+  * Search
+  * Filter
+  * Sort
+  * Pagination
+* 📊 Insights section:
+
+  * Top spending category
+  * Expense change percentage
+  * Savings rate
+  * Bar chart analytics
+* 👤 Role-based UI:
+
+  * Viewer (read-only)
+  * Admin (add/edit/delete/export CSV)
+* 🌙 Dark mode support
+* 💾 Data persistence using localStorage
+* 📱 Fully responsive design
 
 ---
 
-## Features
+## 🛠️ Tech Stack
 
-- Summary cards with month-over-month trends
-- Balance trend line chart + spending donut chart
-- Transactions table: search, filter, sort, paginate
-- Insights: top category, expense change %, savings rate, bar charts
-- Role-based UI: Viewer (read-only) vs Admin (add/edit/delete/export CSV)
-- Dark mode + localStorage persistence
-- Fully responsive
+* React 18
+* Vite
+* Chart.js + react-chartjs-2
+* Context API + useReducer
+* CSS (custom properties)
+* localStorage
 
 ---
 
-## Tech Stack
+## 📌 Description
 
-- React 18 + Vite
-- Chart.js + react-chartjs-2
-- useReducer + Context API
-- CSS custom properties (no Tailwind/MUI)
-- localStorage for persistence
+FinFlow is designed to provide a simple yet powerful interface for managing personal finances. It focuses on usability, clean UI, and efficient state management while delivering meaningful insights through data visualization.
+
+---
